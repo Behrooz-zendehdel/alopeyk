@@ -27,9 +27,9 @@
   margin: 0 10px;
 }
 .navList nav ul li a:hover {
-  border-bottom: 2px solid var(--btnPrimary);
-  width: 15px;
-  transition: all 0.5s ease;
+  border-bottom: 1px solid var(--btnPrimary);
+  width: 10px;
+  transition: all 0.2s ease;
 }
 
 .navList nav ul li a {
@@ -48,7 +48,7 @@ button:hover {
   margin: 5px;
 }
 .login {
-  background-color: var(--btnsemiPrimary);
+  background-color: var(--btnPrimary);
 }
 .signup {
   background-color: #fff;
