@@ -21,5 +21,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "vazir", Arial, Helvetica, sans-serif;
+  
 }
 
+
+:root {
+  --btnPrimary: #0044fe;
+  --btnsemiPrimary: #00bfff;
+  --color: #fff;
+  --colorText: #000;
+  --colorPrimary: #041d61;
+}

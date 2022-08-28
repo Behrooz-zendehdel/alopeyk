@@ -1,0 +1,64 @@
+.header {
+  width: 100%;
+  padding: 0 5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.03);
+  position: sticky;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+.logo img {
+  width: 100%;
+  object-fit: cover;
+}
+.navList nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.navList nav ul li {
+  margin: 0 10px;
+}
+.navList nav ul li a:hover {
+  border-bottom: 2px solid var(--btnPrimary);
+  width: 15px;
+  transition: all 0.5s ease;
+}
+
+.navList nav ul li a {
+  text-decoration: none;
+  color: var(--colorText);
+}
+button:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+.btns {
+  padding: 10px 25px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  margin: 5px;
+}
+.login {
+  background-color: var(--btnsemiPrimary);
+}
+.signup {
+  background-color: #fff;
+  border: 2px solid var(--btnsemiPrimary);
+}
+.signup a {
+  color: var(--btnsemiPrimary);
+  text-decoration: none;
+}
+.login a {
+  color: #fff;
+  text-decoration: none;
+}
