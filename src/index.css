@@ -1,0 +1,25 @@
+/* import font vazir */
+@font-face {
+  font-family: "vazir";
+  src: url("/src/fonts/Vazir-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "vazir";
+  src: url("/src/fonts/Vazir-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "vazir";
+  src: url("/src/fonts/Vazir-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "vazir";
+  src: url("/src/fonts/Vazir-Thin.ttf") format("truetype");
+}
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "vazir", Arial, Helvetica, sans-serif;
+}
+
