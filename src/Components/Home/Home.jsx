@@ -9,6 +9,8 @@ import anbohImage from "../../assets/anboh.webp";
 import { BsArrowLeft } from "react-icons/bs";
 import { RiEBike2Line } from "react-icons/ri";
 import { FaTruckPickup } from "react-icons/fa";
+import { MdLocalPostOffice } from "react-icons/md";
+import { BiReceipt, BiUnite } from "react-icons/bi";
 import { GiFullMotorcycleHelmet } from "react-icons/gi";
 import "./home.css";
 const Home = () => {
@@ -18,16 +20,18 @@ const Home = () => {
   const [post, setPost] = useState(false);
   const [frosh, setFrosh] = useState(false);
   const [anboh, setAnboh] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
-  const clickHandlerBike = () => {
+  const clickHandlerBike = (e) => {
     setBike(true);
     setTaxi(false);
     setCaro(false);
     setPost(false);
     setFrosh(false);
     setAnboh(false);
+    setIsActive(!isActive);
   };
-  const clickHandlerTaxi = () => {
+  const clickHandlerTaxi = (e) => {
     setBike(false);
     setTaxi(true);
     setCaro(false);
@@ -67,6 +71,7 @@ const Home = () => {
     setFrosh(false);
     setAnboh(true);
   };
+
   return (
     <Layout>
       <div className="home">
@@ -76,7 +81,7 @@ const Home = () => {
               <div className="home-right">
                 <h1>سریع ارسال بکنید</h1>
                 <p> با پیک موتوری مرسوله ها را آسان به مقصد برسانید</p>
-                <button className="btn btn-primary">ثبت درخواست</button>
+                <button className="btn btn-primary ">ثبت درخواست</button>
                 <span>
                   درباره الوپیک بیشتر بدانید <BsArrowLeft />
                 </span>
@@ -182,11 +187,7 @@ const Home = () => {
               <RiEBike2Line size={"2rem"} />
             </span>
           </button>
-          <button
-            className="btn flexx active"
-            onClick={clickHandlerTaxi}
-            name={taxi}
-          >
+          <button className="btn flexx" onClick={clickHandlerTaxi} name={taxi}>
             <span> الوتاکسی</span>
             <span>
               <GiFullMotorcycleHelmet size={"2rem"} />
@@ -201,19 +202,19 @@ const Home = () => {
           <button className="btn flexx" onClick={clickHandlerPost}>
             <span> الوپست</span>
             <span>
-              <RiEBike2Line size={"2rem"} />
+              <MdLocalPostOffice size={"2rem"} />
             </span>
           </button>
           <button className="btn flexx" onClick={clickHandlerFrosh}>
             <span> الوفروش</span>
             <span>
-              <RiEBike2Line size={"2rem"} />
+              <BiReceipt size={"2rem"} />
             </span>
           </button>
           <button className="btn flexx" onClick={clickHandlerAnboh}>
             <span> سفارش انبوه</span>
             <span>
-              <RiEBike2Line size={"2rem"} />
+              <BiUnite size={"2rem"} />
             </span>
           </button>
         </div>
