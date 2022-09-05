@@ -1,3 +1,8 @@
+import biketypes from "../assets/biketypes.svg";
+import settingtypes from "../assets/settingtypes.svg";
+import comtypees from "../assets/comtypees.svg";
+import casetypes from "../assets/casetypes.svg";
+
 export const trips = [
   {
     id: 1,
@@ -52,5 +57,32 @@ export const trips = [
     textBtn: "ثبت درخواست",
     detailTrip: "درباره سفارش انبوه بیشتر بدانید",
     image: "../assets/anboh.webp",
+  },
+];
+
+export const types = [
+  {
+    id: 1,
+    img: biketypes,
+    title: "انواع وسایل حمل‌و‌نقل",
+    desc: " با خدمات الوپیک جا‌به‌جایی هر نوع مرسوله و سفر درشهر را تجربه کنید. ",
+  },
+  {
+    id: 2,
+    img: settingtypes,
+    title: " شخصی‌سازی درخواست‌ها ",
+    desc: "با استفاده از تنظیمات متنوع، درخواست را متناسب با نیاز‌های خود ثبت کنید. ",
+  },
+  {
+    id: 3,
+    img: comtypees,
+    title: "انواع پلتفرم‌ها   ",
+    desc: " الوپیک را در نسخه‌ها‌ی اپلیکیشن تحت وب، اندروید و ios تجربه کنید.",
+  },
+  {
+    id: 4,
+    img: casetypes,
+    title: "رصد آنلاین",
+    desc: "وضعیت و مکان مرسوله‌ها را از مبدا تا مقصد به صورت لحظه‌ای رصد کنید. ",
   },
 ];
