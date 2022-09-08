@@ -18,9 +18,9 @@ import share from "../../assets/share.webp";
 import googlePlay from "../../assets/googlePlay.svg";
 import bazar from "../../assets/bazar.svg";
 import alopeyk from "../../assets/alopeyk.svg";
-import Loading from "../../Loading/Loading";
 
 import "./home.css";
+import SwiperImage from "../../Hooks/Swiper";
 const Home = () => {
   const [bike, setBike] = useState(true);
   const [taxi, setTaxi] = useState(false);
@@ -29,7 +29,6 @@ const Home = () => {
   const [frosh, setFrosh] = useState(false);
   const [anboh, setAnboh] = useState(false);
   const [isActive, setIsActive] = useState(false);
-  const [isLoading,setIsLoading]=useState(false)
 
   const clickHandlerBike = () => {
     setBike(true);
@@ -282,6 +281,31 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* joined */}
+      <section>
+        <div className="section-joined">
+          <div className="joined-right">
+            <div className="joined-right-title">
+              <h1>عضوی از ما شوید</h1>
+              <p>
+                الوپیک با بیش از
+                <b> 4 میلیون کاربر</b> و<b> 150 هزار سفیر</b> بزرگترین سامانه
+                حمل‌و‌نقل در ایران است. شما هم عضوی از این خانواده بزرگ شوید.
+              </p>
+            </div>
+            <div className="joined-right-btn">
+              <button className="btn btn-primary ms-3">ثبت نام کاربران</button>
+              <button className="btn btn-info">ثبت نام سفیران</button>
+            </div>
+          </div>
+          <div className="joined-left">
+            <div className="joined-left-img">
+              <SwiperImage />
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </Layout>
   );
 };

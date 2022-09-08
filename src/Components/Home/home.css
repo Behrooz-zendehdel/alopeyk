@@ -195,3 +195,38 @@
   font-size: 19px;
   font-weight: bold;
 }
+.section-joined {
+  padding: 3rem 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.joined-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.joined-right h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.joined-right p {
+  line-height: 2;
+  letter-spacing: 1.2px;
+}
+.joined-right b {
+  font-size: 25px;
+}
+.imageSlider {
+  width: 400px;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+.btn-info {
+  border-radius: 50px;
+  padding: 10px 40px;
+  font-size: 25px;
+  color: #fff !important;
+}
