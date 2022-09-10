@@ -14,13 +14,12 @@ import { BiReceipt, BiUnite } from "react-icons/bi";
 import { GiFullMotorcycleHelmet } from "react-icons/gi";
 import Bizines from "./SectionBizines/Bizines";
 import Types from "./SectionTypes/Types";
-import share from "../../assets/share.webp";
-import googlePlay from "../../assets/googlePlay.svg";
-import bazar from "../../assets/bazar.svg";
-import alopeyk from "../../assets/alopeyk.svg";
 
 import "./home.css";
-import SwiperImage from "../../Hooks/Swiper";
+
+
+import SectionShare from "./sectionShare/SectionShare";
+import SectionJoined from "./SectionJoined/SectionJoined";
 const Home = () => {
   const [bike, setBike] = useState(true);
   const [taxi, setTaxi] = useState(false);
@@ -246,66 +245,12 @@ const Home = () => {
       <Types />
 
       {/* share section */}
-      <section>
-        <div className="shares">
-          <div className="share-right">
-            <div className="share-image">
-              <img src={share} alt="" />
-            </div>
-          </div>
-          <div className="share-left">
-            <div className="share-detail">
-              <h2>تجربه بهتر با اپلیکیشن الوپیک </h2>
-              <h4>مناسب برای کاربران اندروید</h4>
-              <div className="share-img-link">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.alopeyk.customer"
-                  target="blank"
-                >
-                  <img src={googlePlay} alt="" />
-                </a>
-                <a
-                  href="https://cafebazaar.ir/app/com.alopeyk.customer"
-                  target="blank"
-                >
-                  <img src={bazar} alt="" />
-                </a>
-              </div>
-              <div className="web-app">
-                <h2>مناسب برای کاربران وب و ios</h2>
-                <a href="https://app.alopeyk.com/login" target="blank">
-                  <img src={alopeyk} alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
+      <SectionShare />
+
       {/* joined */}
-      <section>
-        <div className="section-joined">
-          <div className="joined-right">
-            <div className="joined-right-title">
-              <h1>عضوی از ما شوید</h1>
-              <p>
-                الوپیک با بیش از
-                <b> 4 میلیون کاربر</b> و<b> 150 هزار سفیر</b> بزرگترین سامانه
-                حمل‌و‌نقل در ایران است. شما هم عضوی از این خانواده بزرگ شوید.
-              </p>
-            </div>
-            <div className="joined-right-btn">
-              <button className="btn btn-primary ms-3">ثبت نام کاربران</button>
-              <button className="btn btn-info">ثبت نام سفیران</button>
-            </div>
-          </div>
-          <div className="joined-left">
-            <div className="joined-left-img">
-              <SwiperImage />
-            </div>
-          </div>
-        </div>
-      </section>
-      
+
+      <SectionJoined />
     </Layout>
   );
 };

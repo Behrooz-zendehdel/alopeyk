@@ -1,0 +1,94 @@
+.header-footer {
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+
+  margin: 0 2rem;
+}
+.title-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.title-footer h5 {
+  font-weight: bold;
+}
+.title-footer a {
+  text-decoration: none;
+  color: #000;
+}
+.title-footer a:hover h6 {
+  font-weight: bold;
+}
+.title-footer-linked {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.title-footer-linked div {
+  margin: 0.5rem 0;
+}
+.linked {
+  margin-top: 1rem;
+}
+
+.title-footer-linked div:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.a-link {
+  border: 2px solid #0d6efd;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+.a-link:hover {
+  opacity: 0.5;
+}
+.logoshaparak {
+  margin: 1rem 0;
+}
+.bazar-linked {
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+}
+.google-bazar-alopeyk-linked {
+  display: flex;
+  margin-top: 2rem;
+}
+.right-linekd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right-linekd span {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.left-linekd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left-linekd span {
+  margin-bottom: 1rem;
+  font-weight: bold;
+
+}
+.right-linked-center img {
+  margin: 0 0.5rem;
+}
+.mean {
+  border-top: 1px solid #eee;
+  margin-top: 1rem;
+}
+.mean span {
+  margin-top: 1rem;
+  font-size: 25px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
